@@ -42,7 +42,7 @@ Stephen Van Hedger, April 2020
 /** Main Variables and Functions **/
 /**********************************/
 
-var useAudio = true; // change to false if you want this to be a visual task!
+var useAudio = false; // change to false if you want this to be a visual task!
 
 var currentDigitList; //current digit list
 var reversedDigitString; //reversed digit string
@@ -51,14 +51,14 @@ var totalTrials = 0; //counter for total trials
 var maxSpan; //value that will reflect a participant's maximum span (e.g., 6)
 var folder = "digits/"; //folder name for storing the audio files
 var bdsTrialNum = 1; //counter for trials
-var bdsTotalTrials = 12; //total number of desired trials
+var bdsTotalTrials = 15; //total number of desired trials
 var response = []; //for storing partcipants' responses
 var bds_correct_ans; //for storing the correct answer on a given trial
 var staircaseChecker = []; //for assessing whether the span should move up/down/stay
 var staircaseIndex = 0; //index for the current staircase
 var digit_list = [1,2,3,4,5,6,7,8,9]; //digits to be used (unlikely you will want to change this)
 
-var startingSpan = 3; //where we begin in terms of span
+var startingSpan = 2; //where we begin in terms of span
 var currentSpan; //to reference where participants currently are
 var spanHistory = []; //easy logging of the participant's trajectory
 var stimList; //this is going to house the ordering of the stimuli for each trial
